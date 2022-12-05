@@ -1023,78 +1023,8 @@ a:link {
 }
 // MENU END
 
-// SIDEBAR START
-.sidebar_container {
-  background: #283046;
-  max-width: 110px;
-  min-width: 110px;
-  height: 100vh;
-
-  .nav_click {
-    position: relative;
-
-    .active {
-      position: absolute;
-      right: -120%;
-    }
-  }
-}
-
-.sideDataAdmin_container {
-  background: #3c4869;
-  max-width: 285px;
-  min-width: 285px;
-
-  .state_avatar_icon {
-    min-width: 50px;
-  }
-}
-// SIDEBAR END
-
-// ADMIN START
-.admin_responses_container {
-  padding: 3rem 3rem;
-  width: 100%;
-
-  .admin_responses_inner_container {
-    max-height: calc(100vh - 220px);
-    overflow: auto;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  .response_card {
-    border: 2px solid #161d31;
-    border-radius: 10px;
-
-    .edit_icon {
-      min-width: 45px;
-    }
-  }
-
-  .arrow {
-    min-width: 35px;
-  }
-}
-// ADMIN END
-
 // RESPONSIVES START
 @media screen and (max-width: 1100px) {
-  .login_container {
-    .login-right {
-      display: none;
-    }
-
-    .login-left {
-      width: 100%;
-
-      .inner-left {
-        width: 80%;
-      }
-    }
-  }
   .kpidetail_container {
     margin-top: 30px;
   }
@@ -1114,80 +1044,6 @@ a:link {
     min-width: 1px;
     height: 45px;
     border-radius: 6px;
-  }
-  .sidebar_container {
-    max-width: 70px;
-    min-width: 50px;
-
-    .logo {
-      max-width: 30px;
-    }
-
-    ul {
-      .nav_click {
-        .icon {
-          max-width: 26px;
-        }
-
-        .active {
-          max-width: 15px;
-          top: 50%;
-          right: -80%;
-          transform: translateY(-50%);
-          display: none;
-        }
-      }
-
-      .nav_click.active {
-        position: relative;
-      }
-
-      .nav_click.active::after {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-      }
-    }
-  }
-
-  .admin_responses_container {
-    padding: 1.5rem 1.2rem;
-
-    .admin_responses_inner_container {
-      max-height: calc(100vh - 125px);
-    }
-
-    .arrow {
-      min-width: 30px;
-    }
-
-    .response_card .edit_icon {
-      min-width: 36px;
-    }
-  }
-
-  .sideDataAdmin_container {
-    min-width: 0px;
-
-    h3 {
-      font-size: 16px;
-    }
-
-    .state_avatar_icon {
-      min-width: 0px;
-      max-width: 35px;
-    }
-
-    .f22 {
-      font-size: 1rem;
-    }
-
-    .f14 {
-      font-size: 0.775rem;
-    }
   }
 }
 

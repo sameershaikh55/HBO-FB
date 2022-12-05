@@ -1,15 +1,12 @@
 import React from "react";
+import Layout from "../layout";
 import AdminResponses from "../components/AdminResponses";
-import Sidebar from "../components/Sidebar";
-import SideDataAdmin from "../components/SideDataAdmin";
 
 const Admin = () => {
   return (
-    <div className="d-flex">
-      <Sidebar />
-      <SideDataAdmin />
+    <Layout>
       <AdminResponses title="Responses" />
-    </div>
+    </Layout>
   );
 };
 

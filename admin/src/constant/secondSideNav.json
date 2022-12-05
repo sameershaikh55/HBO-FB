@@ -1,0 +1,24 @@
+{
+  "nav": [
+    {
+      "color": "pink_bg",
+      "name": "User Interaction"
+    },
+    {
+      "color": "ferozi_bg",
+      "name": "Organisational Processes"
+    },
+    {
+      "color": "lightgreen_bg",
+      "name": "Infrastructure"
+    },
+    {
+      "color": "green_bg",
+      "name": "Software"
+    },
+    {
+      "color": "yellow_bg",
+      "name": "Hardware Interfacing"
+    }
+  ]
+}
