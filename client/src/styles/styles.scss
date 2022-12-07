@@ -10,14 +10,17 @@
 
 // VARIABLES START
 $color1: #283046;
-$color2: #f4f0ec;
+$color2: #f8f8f8;
 $color3: #313d5f;
-$color4: #f0e8de;
+$color4: #eaeff4;
 $color5: #181a26;
-$color6: #eae6e1;
+$color6: #eaeff4;
 $color7: #c3baaf;
 $color8: #d0d2d6;
 $color9: #161d31;
+$color10: #8bc5ff;
+$color10: #8bc5ff;
+$color11: #4468f9;
 // VARIABLES END
 
 // GLOBAL START
@@ -260,24 +263,47 @@ p {
   background: $color9;
 }
 
+.color10 {
+  color: $color10;
+
+  &:hover {
+    color: $color10;
+  }
+}
+
+.bg_color10 {
+  background: $color10;
+}
+.color11 {
+  color: $color11;
+
+  &:hover {
+    color: $color11;
+  }
+}
+
+.bg_color11 {
+  background: $color11;
+}
+
 .pink_bg {
-  background: #eab1b8;
+  background: #ffb1ba;
 }
 
 .green_bg {
-  background: #9ed690;
+  background: #85d1ae;
 }
 
 .yellow_bg {
-  background: #eae098;
+  background: #f5e77e;
 }
 
 .lightgreen_bg {
-  background: #c7dad0;
+  background: #9eef8a;
 }
 
 .ferozi_bg {
-  background: #8bc3c4;
+  background: #7de6e8;
 }
 
 .color_circle {
@@ -288,6 +314,14 @@ p {
 
 a:link {
   text-decoration: none;
+}
+
+button:not(.not_hover) {
+  transition: 0.5s !important;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .page_container {
@@ -577,35 +611,35 @@ a:link {
   padding: 4px 6px;
 }
 
-.Gebruikersinteractie::before,
+.User_Interaction::before,
 .Software::before,
 .Organisatieprocessen::before,
 .Infrastructuur::before,
 .Hardware-interfacing::before {
   content: "";
-  padding: 5px 13px;
+  padding: 7px 16px;
   margin-right: 10px;
   border-radius: 25px;
 }
 
-.Gebruikersinteractie::before {
-  background-color: #eab1b8;
+.User_Interaction::before {
+  background-color: #ffb1ba;
 }
 
 .Software::before {
-  background-color: #9ed690;
+  background-color: #9eef8a;
 }
 
 .Organisatieprocessen::before {
-  background-color: #8bc3c4;
+  background-color: #7de6e8;
 }
 
 .Infrastructuur::before {
-  background-color: #c7dad0;
+  background-color: #85d1ae;
 }
 
 .Hardware-interfacing::before {
-  background-color: #eae098;
+  background-color: #f5e77e;
 }
 // GRID CARD END
 
@@ -1016,12 +1050,60 @@ a:link {
       border-radius: 3px;
     }
   }
+
+  .participation_form {
+    .ag_skill_switch {
+      border: 3px solid #3c4869;
+
+      button {
+        padding: 0.2rem 0.6rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button:not(.bg_color10) {
+        background: $color1;
+        color: #fff;
+      }
+
+      & button:nth-child(1) {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      & button:nth-child(2) {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
 }
 
 .menu_second_half {
   background: $color1;
 }
 // MENU END
+
+// ParticipentFormSubmission START
+.participentFormSubmission_container {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .p_form_submission {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & h1:nth-child(2) {
+      line-height: 20px;
+    }
+  }
+}
+// ParticipentFormSubmission END
 
 // RESPONSIVES START
 @media screen and (max-width: 1100px) {
@@ -1083,6 +1165,16 @@ a:link {
   }
   .analyse_container {
     margin-top: 2rem;
+  }
+  .User_Interaction::before,
+  .Software::before,
+  .Organisatieprocessen::before,
+  .Infrastructuur::before,
+  .Hardware-interfacing::before {
+    content: "";
+    padding: 7px 14px;
+    margin-right: 10px;
+    border-radius: 25px;
   }
 }
 // RESPONSIVES END

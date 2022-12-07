@@ -36,7 +36,7 @@ const Header = ({ showSearch, kpidetail, menu }) => {
         <div className="hamburger d-flex align-items-center gap-2 gap-md-5">
           {kpidetail && (
             <Link
-              to=""
+              to="/"
               className="go_back d-flex align-items-center gap-1 gap-md-3 color1 fw600 text-decoration-underline f18"
             >
               <img src={back} alt="" />

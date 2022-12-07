@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
-  <path id="Path_1210" data-name="Path 1210" d="M5,0H24a5,5,0,0,1,5,5V24a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" fill="#283046"/>
-  <g id="Group_1301" data-name="Group 1301" transform="translate(5.722 5.566)">
-    <rect id="Rectangle_182" data-name="Rectangle 182" width="7.66" height="7.66" rx="3.83" transform="translate(0)" fill="#f0e8de"/>
-    <rect id="Rectangle_183" data-name="Rectangle 183" width="7.66" height="7.66" rx="3.83" transform="translate(9.896)" fill="#f0e8de"/>
-    <rect id="Rectangle_184" data-name="Rectangle 184" width="7.66" height="7.66" rx="3.83" transform="translate(0 10.207)" fill="#f0e8de"/>
-    <rect id="Rectangle_185" data-name="Rectangle 185" width="7.66" height="7.66" rx="3.83" transform="translate(9.896 10.207)" fill="#f0e8de"/>
-  </g>
+<svg id="Group_1301" data-name="Group 1301" xmlns="http://www.w3.org/2000/svg" width="17.556" height="17.867" viewBox="0 0 17.556 17.867">
+  <rect id="Rectangle_182" data-name="Rectangle 182" width="7.66" height="7.66" rx="3.83" transform="translate(0)" fill="#313d5f"/>
+  <rect id="Rectangle_183" data-name="Rectangle 183" width="7.66" height="7.66" rx="3.83" transform="translate(9.896)" fill="#313d5f"/>
+  <rect id="Rectangle_184" data-name="Rectangle 184" width="7.66" height="7.66" rx="3.83" transform="translate(0 10.207)" fill="#313d5f"/>
+  <rect id="Rectangle_185" data-name="Rectangle 185" width="7.66" height="7.66" rx="3.83" transform="translate(9.896 10.207)" fill="#313d5f"/>
 </svg>

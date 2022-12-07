@@ -12,7 +12,10 @@ const GridCard = ({
       <div className="inner-card">
         <div className="card-head">
           <p
-            className={`${architectuurlaag.replaceAll(" ", "-")} color3 fw500 text-decoration-none`}
+            className={`${architectuurlaag.replaceAll(
+              " ",
+              "_"
+            )} color3 fw500 text-decoration-none`}
           >
             {architectuurlaag}
           </p>

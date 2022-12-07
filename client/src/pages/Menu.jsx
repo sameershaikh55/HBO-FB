@@ -44,8 +44,12 @@ const Menu = () => {
                 <div className="row">
                   <div className="col-11 col-md-8 col-lg-10 mx-auto">
                     <div className="d-flex justify-content-end gap-3">
-                      <img src={threeLines} alt="" />
-                      <img src={fourDots} alt="" />
+                      <button className="py-1 px-2 rounded-3 border-0 not_hover">
+                        <img src={threeLines} alt="" />
+                      </button>
+                      <button className="bg_color10 py-1 px-2 rounded-3 border-0 not_hover">
+                        <img src={fourDots} alt="" />
+                      </button>
                     </div>
                     <div className="mt-3">
                       <h5>Filter on</h5>

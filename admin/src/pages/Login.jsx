@@ -15,7 +15,7 @@ const Login = () => {
           <div className="d-flex flex-column">
             <Input label="Username" />
             <Input label="Password" icon={lock} />
-            <Link to="/home" className="btn btn-lg bg_color2 rounded-3 border-0 f18">
+            <Link to="/home" className="rounded-3 btn-lg bg_color2 rounded-3 border-0 f18">
               Login
             </Link>
           </div>

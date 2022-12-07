@@ -91,7 +91,7 @@ const KpiDetail = () => {
                 })}
               </div>
 
-              <p className="uploaded_container d-flex justify-content-between mt-3 bg_color2 f12 px-2 py-1 rounded-3">
+              <p className="uploaded_container d-flex justify-content-between mt-3 bg_color6 f12 px-2 py-1 rounded-3">
                 <p className="opacity-50 mb-0">
                   Uploaded on: 31-10-2022 | By: Anoniem | Semester: S3 |
                   University: Fontys
@@ -117,8 +117,9 @@ const KpiDetail = () => {
 
         <div className="kpidetail_bottom text-center color7 f18">
           <div className="d-flex justify-content-center flex-wrap gap-1">
-          Press <div className="btn_shortcut mx-1">Command</div> +{" "}
-            <div className="btn_shortcut mx-2">Enter</div> to go to the next KPI.
+            Press <div className="btn_shortcut mx-1">Command</div> +{" "}
+            <div className="btn_shortcut mx-2">Enter</div> to go to the next
+            KPI.
           </div>
         </div>
       </div>
