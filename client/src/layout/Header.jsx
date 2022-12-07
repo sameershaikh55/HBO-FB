@@ -7,9 +7,11 @@ import hamburgerDark from "../assets/icons/hamburgerDark.svg";
 import openedHamburger from "../assets/icons/openedHamburger.svg";
 import openedHamburgerD from "../assets/icons/openedHamburgerD.svg";
 import back from "../assets/icons/back.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ showSearch, kpidetail, menu }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="header_container">
       <div className="d-flex justify-content-between gap-1">
@@ -35,13 +37,13 @@ const Header = ({ showSearch, kpidetail, menu }) => {
 
         <div className="hamburger d-flex align-items-center gap-2 gap-md-5">
           {kpidetail && (
-            <Link
-              to="/"
-              className="go_back d-flex align-items-center gap-1 gap-md-3 color1 fw600 text-decoration-underline f18"
+            <button
+              onClick={() => navigate(-1)}
+              className="go_back d-flex align-items-center gap-1 gap-md-3 color1 fw600 text-decoration-underline f18 border-0 bg-transparent"
             >
               <img src={back} alt="" />
               Go back
-            </Link>
+            </button>
           )}
           <Link to="/menu">
             {(kpidetail && <img src={hamburgerDark} alt="" />) ||

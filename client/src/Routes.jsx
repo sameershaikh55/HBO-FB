@@ -8,6 +8,7 @@ import Menu from "./pages/Menu";
 import WhyThisApp from "./pages/WhyThisApp";
 import Participate from "./pages/Participate";
 import ParticipentFormSubmission from "./pages/ParticipentFormSubmission";
+import Faq from "./pages/Faq";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
         <Route path="/kpi-detail" element={<KpiDetail />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/wta" element={<WhyThisApp />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/participate" element={<Participate />} />
         <Route path="/thank-you" element={<ParticipentFormSubmission />} />
       </Routes>

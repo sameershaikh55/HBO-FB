@@ -34,6 +34,39 @@ const Menu = () => {
     },
   ];
 
+  const menuRightSide = (classes) => (
+    <div className={classes}>
+      <div className="d-flex flex-column gap-3">
+        <Link to="/wta" className="color4 display-5 fw-bold">
+          Why this App
+        </Link>
+        <Link to="/participate" className="color4 display-5 fw-bold">
+          How can I participate?
+        </Link>
+        <Link to="/faq" className="color4 display-5 fw-bold">
+          FAQ
+        </Link>
+      </div>
+
+      <ul className="list-unstyled d-flex gap-4">
+        <li className="d-flex gap-2">
+          <img className="avatar" src={avatarD} alt="" />
+          <div className="color8">
+            <h6 className="mb-0">8.549k</h6>
+            <p className="f12">views</p>
+          </div>
+        </li>
+        <li className="d-flex gap-2">
+          <img className="chart" src={chartD} alt="" />
+          <div className="color8">
+            <h6 className="mb-0">188</h6>
+            <p className="f12">kpi’s</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  );
+
   return (
     <>
       <Layout menu>
@@ -110,35 +143,11 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              {/* SECOND HALF */}
-              <div className="col-6 d-none d-lg-flex flex-column gap-5 ps-lg-5 mt-5 mt-lg-0 py-5 py-lg-0">
-                <div className="d-flex flex-column gap-3">
-                  <Link to="/wta" className="color4 display-5 fw-bold">
-                    Why this App
-                  </Link>
-                  <Link to="/participate" className="color4 display-5 fw-bold">
-                    How can I participate?
-                  </Link>
-                  <h1 className="color4 display-5 fw-bold">Github</h1>
-                </div>
 
-                <ul className="list-unstyled d-flex gap-4">
-                  <li className="d-flex gap-2">
-                    <img className="avatar" src={avatarD} alt="" />
-                    <div className="color8">
-                      <h6 className="mb-0">8.549k</h6>
-                      <p className="f12">views</p>
-                    </div>
-                  </li>
-                  <li className="d-flex gap-2">
-                    <img className="chart" src={chartD} alt="" />
-                    <div className="color8">
-                      <h6 className="mb-0">188</h6>
-                      <p className="f12">kpi’s</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              {/* SECOND HALF */}
+              {menuRightSide(
+                "col-6 d-none d-lg-flex flex-column gap-5 ps-lg-5 mt-5 mt-lg-0 py-5 py-lg-0"
+              )}
             </div>
           </div>
         </div>
@@ -146,34 +155,9 @@ const Menu = () => {
       <div className="menu_second_half d-block d-lg-none">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-11 mx-auto d-flex flex-column gap-5 ps-lg-5 py-5 py-lg-0">
-              <div className="d-flex flex-column gap-3">
-                <Link to="/wta" className="color4 display-5 fw-bold">
-                  Why this App
-                </Link>
-                <Link to="/participate" className="color4 display-5 fw-bold">
-                  How can I participate?
-                </Link>
-                <h1 className="color4 display-5 fw-bold">Github</h1>
-              </div>
-
-              <ul className="list-unstyled d-flex gap-4">
-                <li className="d-flex gap-2">
-                  <img className="avatar" src={avatarD} alt="" />
-                  <div className="color8">
-                    <h6 className="mb-0">8.549k</h6>
-                    <p className="f12">views</p>
-                  </div>
-                </li>
-                <li className="d-flex gap-2">
-                  <img className="chart" src={chartD} alt="" />
-                  <div className="color8">
-                    <h6 className="mb-0">188</h6>
-                    <p className="f12">kpi’s</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            {menuRightSide(
+              "col-11 mx-auto d-flex flex-column gap-5 ps-lg-5 py-5 py-lg-0"
+            )}
           </div>
         </div>
       </div>
