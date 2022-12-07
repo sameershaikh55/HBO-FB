@@ -50,6 +50,7 @@ const Header = ({ showSearch, kpidetail, menu }) => {
               (showSearch && <img src={hamburger} alt="" />) ||
               (menu && (
                 <img
+                  onClick={() => navigate(-1)}
                   className="d-none d-lg-block"
                   src={openedHamburger}
                   alt=""
@@ -57,6 +58,7 @@ const Header = ({ showSearch, kpidetail, menu }) => {
               ))}
             {menu && (
               <img
+                onClick={() => navigate(-1)}
                 className="d-block d-lg-none"
                 src={openedHamburgerD}
                 alt=""
